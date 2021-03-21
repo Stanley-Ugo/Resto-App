@@ -14,4 +14,9 @@ export class RestoService {
   {
     return this.http.get(this.url);
   }
+
+  saveResto(data)
+  {
+    return this.http.post(this.url, data);
+  }
 }
