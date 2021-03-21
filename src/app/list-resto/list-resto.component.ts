@@ -10,9 +10,14 @@ export class ListRestoComponent implements OnInit {
 
   constructor(private resto:RestoService) { }
 
+  collection = {}
+
   ngOnInit(): void {
     this.resto.getList().subscribe((result)=> {
-      console.log(result)
+
+      console.log(result);
+
+      this.collection = result;
     })
   }
 
