@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class RestoService {
 
   constructor() { }
+
+  getList()
+  {
+    console.log("Some data");
+  }
 }
