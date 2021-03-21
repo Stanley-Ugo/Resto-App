@@ -8,7 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class UpdateRestoComponent implements OnInit {
 
-  updateResto = new FormGroup({
+  editResto = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
     address: new FormControl('')
