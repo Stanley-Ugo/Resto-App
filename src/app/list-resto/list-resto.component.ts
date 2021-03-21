@@ -21,4 +21,9 @@ export class ListRestoComponent implements OnInit {
     })
   }
 
+  deleteResto(item)
+  {
+    
+  }
+
 }
