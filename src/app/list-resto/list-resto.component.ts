@@ -23,7 +23,9 @@ export class ListRestoComponent implements OnInit {
 
   deleteResto(item)
   {
-    
+    this.resto.deleteResto(item).subscribe((result)=> {
+      console.log("result", result);
+    })
   }
 
 }
