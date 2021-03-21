@@ -11,7 +11,9 @@ export class ListRestoComponent implements OnInit {
   constructor(private resto:RestoService) { }
 
   ngOnInit(): void {
-    this.resto.getList()
+    this.resto.getList().subscribe((result)=> {
+      console.log(result)
+    })
   }
 
 }
