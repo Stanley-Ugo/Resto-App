@@ -16,10 +16,12 @@ export class UpdateRestoComponent implements OnInit {
     address: new FormControl('')
   });
 
-  constructor(private router: ActivatedRoute) { }
+  constructor(private router: ActivatedRoute, private resto: RestoService) { }
 
   ngOnInit(): void {
     console.log(this.router.snapshot.params.id)
   }
+
+  
 
 }
