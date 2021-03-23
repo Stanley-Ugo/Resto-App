@@ -20,8 +20,10 @@ export class UpdateRestoComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.router.snapshot.params.id)
-  }
 
-  
+    this.resto.getCurrentResto(this.router.snapshot.params.id).subscribe((result)=> {
+      console.log(result);
+    })
+  }
 
 }
