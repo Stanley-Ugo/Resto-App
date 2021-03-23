@@ -33,6 +33,9 @@ export class UpdateRestoComponent implements OnInit {
   collection()
   {
     console.log(this.editResto.value);
+    this.resto.updateResto(this.router.snapshot.params.id, this.editResto.value).subscribe((result)=> {
+      console.log(result);
+    })
   }
 
 }
