@@ -15,7 +15,7 @@ export class UpdateRestoComponent implements OnInit {
     address: new FormControl('')
   });
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
