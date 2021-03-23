@@ -10,6 +10,8 @@ import { RestoService } from '../resto.service';
 })
 export class UpdateRestoComponent implements OnInit {
 
+  alert: boolean = false;
+
   editResto = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
@@ -34,8 +36,13 @@ export class UpdateRestoComponent implements OnInit {
   {
     console.log(this.editResto.value);
     this.resto.updateResto(this.router.snapshot.params.id, this.editResto.value).subscribe((result)=> {
-      console.log(result);
+      this.alert = true;
     })
+  }
+
+  closeAlert()
+  {
+    this.alert = false;
   }
 
 }
