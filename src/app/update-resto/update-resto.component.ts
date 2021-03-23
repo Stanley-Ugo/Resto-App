@@ -22,8 +22,17 @@ export class UpdateRestoComponent implements OnInit {
     console.log(this.router.snapshot.params.id)
 
     this.resto.getCurrentResto(this.router.snapshot.params.id).subscribe((result)=> {
-      console.log(result);
+      this.editResto = new FormGroup({
+        name: new FormControl(result['name']),
+        email: new FormControl(result['email']),
+        address: new FormControl(result['address'])
+      });
     })
+  }
+
+  collection()
+  {
+    console.log(this.editResto.value);
   }
 
 }
