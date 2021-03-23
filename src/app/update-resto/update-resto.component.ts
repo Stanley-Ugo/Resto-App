@@ -15,9 +15,10 @@ export class UpdateRestoComponent implements OnInit {
     address: new FormControl('')
   });
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: ActivatedRoute) { }
 
   ngOnInit(): void {
+    console.log(this.router.snapshot.params.id)
   }
 
 }
