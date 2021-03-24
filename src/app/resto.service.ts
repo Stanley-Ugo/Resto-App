@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class RestoService {
 
   url = "http://localhost:3000/restaurants";
-  rootUrl = "http://localhost:3000/"
+  rootUrl = "http://localhost:3000/";
 
   constructor(private http: HttpClient) { }
 
