@@ -19,4 +19,9 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  collection()
+  {
+    console.log(this.register.value);
+  }
+
 }
