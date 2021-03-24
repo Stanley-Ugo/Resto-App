@@ -23,6 +23,7 @@ export class RegisterComponent implements OnInit {
   collection()
   {
     this.resto.registerUser(this.register.value).subscribe((result)=> {
+      console.log(result);
       this.alert = true;
     })
   }
