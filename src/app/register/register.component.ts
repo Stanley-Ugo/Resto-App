@@ -24,14 +24,14 @@ export class RegisterComponent implements OnInit {
   {
     this.resto.registerUser(this.register.value).subscribe((result)=> {
       console.log(result);
-      
+
       this.alert = true;
     })
   }
 
   closeAlert()
   {
-    this.alert = false;
+    
   }
 
 }
